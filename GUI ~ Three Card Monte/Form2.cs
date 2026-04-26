@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace GUI___Three_Card_Monte
 {
-    public partial class FormHome : Form
+    public partial class FormEasy : Form
     {
-        public FormHome()
+        public FormEasy()
         {
             InitializeComponent();
         }
 
-        private void FormHome_Load(object sender, EventArgs e)
+        private void lblcard_Click(object sender, EventArgs e)
         {
-
+            lblcard.Text = "C\nH\nO\nO\
         }
     }
 }

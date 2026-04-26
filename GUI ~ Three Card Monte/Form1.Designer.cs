@@ -148,6 +148,7 @@
             this.Controls.Add(this.btneasy);
             this.Name = "FormHome";
             this.Text = "Three Card Monte";
+            this.Load += new System.EventHandler(this.FormHome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
