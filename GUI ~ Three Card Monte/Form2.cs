@@ -19,7 +19,7 @@ namespace GUI___Three_Card_Monte
 
         private void lblcard_Click(object sender, EventArgs e)
         {
-            lblcard.Text = "C\nH\nO\nO\
+            lblcard.Text = "C\nH\nO\nO\nS\nE\n \nA\nC\nA\nR\nD";
         }
     }
 }
