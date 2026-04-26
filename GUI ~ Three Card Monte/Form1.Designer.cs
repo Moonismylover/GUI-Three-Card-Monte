@@ -105,6 +105,7 @@
             this.btninstructions.TabIndex = 5;
             this.btninstructions.Text = "How to Play?";
             this.btninstructions.UseVisualStyleBackColor = false;
+            this.btninstructions.Click += new System.EventHandler(this.btninstructions_Click);
             // 
             // btnmusic
             // 
@@ -118,6 +119,7 @@
             this.btnmusic.TabIndex = 6;
             this.btnmusic.Text = "Music";
             this.btnmusic.UseVisualStyleBackColor = false;
+            this.btnmusic.Click += new System.EventHandler(this.btnmusic_Click);
             // 
             // btnquit
             // 
@@ -131,6 +133,7 @@
             this.btnquit.TabIndex = 7;
             this.btnquit.Text = "QUIT";
             this.btnquit.UseVisualStyleBackColor = false;
+            this.btnquit.Click += new System.EventHandler(this.btnquit_Click);
             // 
             // FormHome
             // 
