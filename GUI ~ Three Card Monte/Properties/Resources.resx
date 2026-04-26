@@ -130,4 +130,7 @@
   <data name="King" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\King.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The Neighbourhood- Sweater Weather (Official Instrumental).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

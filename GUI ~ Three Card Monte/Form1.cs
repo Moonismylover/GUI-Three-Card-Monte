@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+using GUI___Three_Card_Monte.Properties;
 
 namespace GUI___Three_Card_Monte
 {
     public partial class FormHome : Form
     {
+        SoundPlayer music;
+        bool musicOn;
+
         public FormHome()
         {
             InitializeComponent();
@@ -19,7 +24,8 @@ namespace GUI___Three_Card_Monte
 
         private void FormHome_Load(object sender, EventArgs e)
         {
-
+            music = new SoundPlayer(Resources.Music);
+            music.PlayLooping();
         }
 
         private void btninstructions_Click(object sender, EventArgs e)
@@ -43,7 +49,16 @@ namespace GUI___Three_Card_Monte
 
         private void btnmusic_Click(object sender, EventArgs e)
         {
-
+            if (musicOn)
+            {
+                music.Stop();
+                musicOn = false;
+            }
+            else
+            {
+                music.PlayLooping();
+                musicOn = true;
+            }
         }
 
         private void btneasy_Click(object sender, EventArgs e)
