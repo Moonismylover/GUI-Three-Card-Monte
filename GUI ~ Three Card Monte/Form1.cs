@@ -37,13 +37,34 @@ namespace GUI___Three_Card_Monte
             {
                 return;
             }
-            
+
 
         }
 
         private void btnmusic_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btneasy_Click(object sender, EventArgs e)
+        {
+            FormEasy game = new FormEasy();
+            game.Show();
+            this.Hide();
+        }
+
+        private void btnmedium_Click(object sender, EventArgs e)
+        {
+            FormMedium game = new FormMedium();
+            game.Show();
+            this.Hide();
+        }
+
+        private void btnhard_Click(object sender, EventArgs e)
+        {
+            FormHard game = new FormHard();
+            game.Show();
+            this.Hide();
         }
     }
 }

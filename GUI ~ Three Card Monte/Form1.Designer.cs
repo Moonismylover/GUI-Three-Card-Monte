@@ -48,6 +48,7 @@
             this.btneasy.TabIndex = 0;
             this.btneasy.Text = "EASY";
             this.btneasy.UseVisualStyleBackColor = false;
+            this.btneasy.Click += new System.EventHandler(this.btneasy_Click);
             // 
             // lblcash
             // 
