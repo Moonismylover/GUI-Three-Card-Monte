@@ -33,6 +33,9 @@
             this.lbltitle = new System.Windows.Forms.Label();
             this.btnmedium = new System.Windows.Forms.Button();
             this.btnhard = new System.Windows.Forms.Button();
+            this.btninstructions = new System.Windows.Forms.Button();
+            this.btnmusic = new System.Windows.Forms.Button();
+            this.btnquit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btneasy
@@ -90,12 +93,54 @@
             this.btnhard.Text = "HARD";
             this.btnhard.UseVisualStyleBackColor = false;
             // 
+            // btninstructions
+            // 
+            this.btninstructions.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btninstructions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninstructions.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninstructions.ForeColor = System.Drawing.Color.MediumPurple;
+            this.btninstructions.Location = new System.Drawing.Point(537, 13);
+            this.btninstructions.Name = "btninstructions";
+            this.btninstructions.Size = new System.Drawing.Size(141, 37);
+            this.btninstructions.TabIndex = 5;
+            this.btninstructions.Text = "How to Play?";
+            this.btninstructions.UseVisualStyleBackColor = false;
+            // 
+            // btnmusic
+            // 
+            this.btnmusic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnmusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmusic.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmusic.ForeColor = System.Drawing.Color.MediumPurple;
+            this.btnmusic.Location = new System.Drawing.Point(684, 13);
+            this.btnmusic.Name = "btnmusic";
+            this.btnmusic.Size = new System.Drawing.Size(104, 37);
+            this.btnmusic.TabIndex = 6;
+            this.btnmusic.Text = "Music";
+            this.btnmusic.UseVisualStyleBackColor = false;
+            // 
+            // btnquit
+            // 
+            this.btnquit.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnquit.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnquit.ForeColor = System.Drawing.Color.MediumPurple;
+            this.btnquit.Location = new System.Drawing.Point(427, 13);
+            this.btnquit.Name = "btnquit";
+            this.btnquit.Size = new System.Drawing.Size(104, 37);
+            this.btnquit.TabIndex = 7;
+            this.btnquit.Text = "QUIT";
+            this.btnquit.UseVisualStyleBackColor = false;
+            // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnquit);
+            this.Controls.Add(this.btnmusic);
+            this.Controls.Add(this.btninstructions);
             this.Controls.Add(this.btnhard);
             this.Controls.Add(this.btnmedium);
             this.Controls.Add(this.lbltitle);
@@ -115,6 +160,9 @@
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Button btnmedium;
         private System.Windows.Forms.Button btnhard;
+        private System.Windows.Forms.Button btninstructions;
+        private System.Windows.Forms.Button btnmusic;
+        private System.Windows.Forms.Button btnquit;
     }
 }
 
