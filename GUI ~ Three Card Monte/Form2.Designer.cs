@@ -32,14 +32,15 @@
             this.btnmusic = new System.Windows.Forms.Button();
             this.btninstructions = new System.Windows.Forms.Button();
             this.lblcash = new System.Windows.Forms.Label();
-            this.imgcardone = new System.Windows.Forms.PictureBox();
             this.lblcard = new System.Windows.Forms.Label();
-            this.imgcardtwo = new System.Windows.Forms.PictureBox();
-            this.imgcardthree = new System.Windows.Forms.PictureBox();
             this.btnplay = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.imgcardone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgcardtwo)).BeginInit();
+            this.imgcardthree = new System.Windows.Forms.PictureBox();
+            this.imgcardtwo = new System.Windows.Forms.PictureBox();
+            this.imgcardone = new System.Windows.Forms.PictureBox();
+            this.btnreset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgcardthree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgcardtwo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgcardone)).BeginInit();
             this.SuspendLayout();
             // 
             // btnquit
@@ -92,16 +93,6 @@
             this.lblcash.TabIndex = 8;
             this.lblcash.Text = "Cash: 500";
             // 
-            // imgcardone
-            // 
-            this.imgcardone.Image = global::GUI___Three_Card_Monte.Properties.Resources.Card;
-            this.imgcardone.Location = new System.Drawing.Point(117, 80);
-            this.imgcardone.Name = "imgcardone";
-            this.imgcardone.Size = new System.Drawing.Size(211, 284);
-            this.imgcardone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgcardone.TabIndex = 12;
-            this.imgcardone.TabStop = false;
-            // 
             // lblcard
             // 
             this.lblcard.AutoSize = true;
@@ -114,15 +105,18 @@
             this.lblcard.Text = "ehh";
             this.lblcard.Click += new System.EventHandler(this.lblcard_Click);
             // 
-            // imgcardtwo
+            // btnplay
             // 
-            this.imgcardtwo.Image = global::GUI___Three_Card_Monte.Properties.Resources.Card;
-            this.imgcardtwo.Location = new System.Drawing.Point(347, 80);
-            this.imgcardtwo.Name = "imgcardtwo";
-            this.imgcardtwo.Size = new System.Drawing.Size(211, 284);
-            this.imgcardtwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgcardtwo.TabIndex = 14;
-            this.imgcardtwo.TabStop = false;
+            this.btnplay.BackColor = System.Drawing.Color.Indigo;
+            this.btnplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnplay.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnplay.Location = new System.Drawing.Point(223, 381);
+            this.btnplay.Name = "btnplay";
+            this.btnplay.Size = new System.Drawing.Size(211, 47);
+            this.btnplay.TabIndex = 16;
+            this.btnplay.Text = "PLAY";
+            this.btnplay.UseVisualStyleBackColor = false;
             // 
             // imgcardthree
             // 
@@ -134,18 +128,38 @@
             this.imgcardthree.TabIndex = 15;
             this.imgcardthree.TabStop = false;
             // 
-            // btnplay
+            // imgcardtwo
             // 
-            this.btnplay.BackColor = System.Drawing.Color.Indigo;
-            this.btnplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnplay.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnplay.Location = new System.Drawing.Point(347, 379);
-            this.btnplay.Name = "btnplay";
-            this.btnplay.Size = new System.Drawing.Size(211, 47);
-            this.btnplay.TabIndex = 16;
-            this.btnplay.Text = "PLAY";
-            this.btnplay.UseVisualStyleBackColor = false;
+            this.imgcardtwo.Image = global::GUI___Three_Card_Monte.Properties.Resources.Card;
+            this.imgcardtwo.Location = new System.Drawing.Point(347, 80);
+            this.imgcardtwo.Name = "imgcardtwo";
+            this.imgcardtwo.Size = new System.Drawing.Size(211, 284);
+            this.imgcardtwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgcardtwo.TabIndex = 14;
+            this.imgcardtwo.TabStop = false;
+            // 
+            // imgcardone
+            // 
+            this.imgcardone.Image = global::GUI___Three_Card_Monte.Properties.Resources.Card;
+            this.imgcardone.Location = new System.Drawing.Point(117, 80);
+            this.imgcardone.Name = "imgcardone";
+            this.imgcardone.Size = new System.Drawing.Size(211, 284);
+            this.imgcardone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgcardone.TabIndex = 12;
+            this.imgcardone.TabStop = false;
+            // 
+            // btnreset
+            // 
+            this.btnreset.BackColor = System.Drawing.Color.Indigo;
+            this.btnreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreset.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnreset.Location = new System.Drawing.Point(466, 381);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(211, 47);
+            this.btnreset.TabIndex = 17;
+            this.btnreset.Text = "RESET";
+            this.btnreset.UseVisualStyleBackColor = false;
             // 
             // FormEasy
             // 
@@ -153,6 +167,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnreset);
             this.Controls.Add(this.btnplay);
             this.Controls.Add(this.imgcardthree);
             this.Controls.Add(this.imgcardtwo);
@@ -164,9 +179,9 @@
             this.Controls.Add(this.lblcash);
             this.Name = "FormEasy";
             this.Text = "Three Card Monte";
-            ((System.ComponentModel.ISupportInitialize)(this.imgcardone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgcardtwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgcardthree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgcardtwo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgcardone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +198,6 @@
         private System.Windows.Forms.PictureBox imgcardtwo;
         private System.Windows.Forms.PictureBox imgcardthree;
         private System.Windows.Forms.Button btnplay;
+        private System.Windows.Forms.Button btnreset;
     }
 }

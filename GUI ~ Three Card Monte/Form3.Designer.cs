@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnplay = new System.Windows.Forms.Button();
             this.lblcard = new System.Windows.Forms.Label();
             this.btnquit = new System.Windows.Forms.Button();
             this.btnmusic = new System.Windows.Forms.Button();
@@ -37,24 +36,12 @@
             this.imgcardthree = new System.Windows.Forms.PictureBox();
             this.imgcardtwo = new System.Windows.Forms.PictureBox();
             this.imgcardone = new System.Windows.Forms.PictureBox();
+            this.btnreset = new System.Windows.Forms.Button();
+            this.btnplay = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgcardthree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgcardtwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgcardone)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnplay
-            // 
-            this.btnplay.BackColor = System.Drawing.Color.Indigo;
-            this.btnplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnplay.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnplay.Location = new System.Drawing.Point(348, 380);
-            this.btnplay.Name = "btnplay";
-            this.btnplay.Size = new System.Drawing.Size(211, 47);
-            this.btnplay.TabIndex = 25;
-            this.btnplay.Text = "PLAY";
-            this.btnplay.UseVisualStyleBackColor = false;
-            this.btnplay.Click += new System.EventHandler(this.btnplay_Click);
             // 
             // lblcard
             // 
@@ -155,12 +142,39 @@
             this.imgcardone.TabStop = false;
             this.imgcardone.Click += new System.EventHandler(this.imgcardone_Click);
             // 
+            // btnreset
+            // 
+            this.btnreset.BackColor = System.Drawing.Color.Indigo;
+            this.btnreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreset.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnreset.Location = new System.Drawing.Point(467, 381);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(211, 47);
+            this.btnreset.TabIndex = 26;
+            this.btnreset.Text = "RESET";
+            this.btnreset.UseVisualStyleBackColor = false;
+            // 
+            // btnplay
+            // 
+            this.btnplay.BackColor = System.Drawing.Color.Indigo;
+            this.btnplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnplay.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnplay.Location = new System.Drawing.Point(224, 381);
+            this.btnplay.Name = "btnplay";
+            this.btnplay.Size = new System.Drawing.Size(211, 47);
+            this.btnplay.TabIndex = 25;
+            this.btnplay.Text = "PLAY";
+            this.btnplay.UseVisualStyleBackColor = false;
+            // 
             // FormMedium
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnreset);
             this.Controls.Add(this.btnplay);
             this.Controls.Add(this.imgcardthree);
             this.Controls.Add(this.imgcardtwo);
@@ -181,8 +195,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnplay;
         private System.Windows.Forms.PictureBox imgcardthree;
         private System.Windows.Forms.PictureBox imgcardtwo;
         private System.Windows.Forms.Label lblcard;
@@ -191,5 +203,7 @@
         private System.Windows.Forms.Button btnmusic;
         private System.Windows.Forms.Button btninstructions;
         private System.Windows.Forms.Label lblcash;
+        private System.Windows.Forms.Button btnreset;
+        private System.Windows.Forms.Button btnplay;
     }
 }
